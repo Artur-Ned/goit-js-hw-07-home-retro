@@ -1,39 +1,17 @@
-// const selectUlEl = document.querySelector('#categories');
-// console.log(selectUlEl);
 
-// const all = selectUlEl.children;
-// console.log(all);
+const selectUl = document.querySelector('#categories');
+// console.log(selectUl);
 
-
-// const containsUL = document.querySelectorAll('li.item');
-// containsUL.forEach(element => console.log(element));
-
-
-const categoriesEl = document.querySelectorAll('.item');
-
-console.log(`В списке ${categoriesEl.length} категории.`);
-categoriesEl.forEach(element => {
-    const tiltleEl = element.querySelector('h2');
-    const liItem = element.querySelectorAll('ul>li');
-    console.log(`Категория: ${tiltleEl.textContent}`);
-    console.log(`Количество элементов: ${liItem.length}`);
-});
-
-
-// const ulCategories = selectUlEl.querySelectorAll('ul');
-// console.log(ulCategories);
-// const containsUL = [...ulCategories];
-// console.log(containsUL);
-// const selectLi = document.querySelectorAll('li');
+const selectLi = selectUl.querySelectorAll('.item');
+console.log(`В списке ${selectLi.length} категории.`);
 // console.log(selectLi);
+selectLi.forEach(element => {
+    const titleEl = element.querySelector('h2');
+    const liEl = element.querySelectorAll('ul>li')
+    console.log(`Категория: ${titleEl.textContent}`);
+    console.log(`Количество элементов: ${liEl.length}`);
 
-// console.log(selectUlEl.getAttribute('item'));
-// const navEl = document.querySelector('.site-nav');
-// console.log('navEl', navEl);
-
-// const navLinksEl = document.querySelectorAll('.site-nav__link');
-// console.log('navLinksEl', navLinksEl);
-
+});
 
 
 
@@ -47,17 +25,3 @@ categoriesEl.forEach(element => {
 
 // Категория: Животные
 // Количество элементов: 4
-
-
-// const refs = {
-//   selectedListId: document.querySelector('#categories'),
-//   getListElem: document.querySelectorAll('#categories li[class="item"]'),
-// };
-
-// console.log(`В списке ${refs.selectedListId.childElementCount} категории`);
-// refs.getListElem.forEach((element) => {
-//   console.log(`Категория: ${element.firstElementChild.textContent}`);
-//   console.log(
-//     `Количество элементов: ${element.lastChild.previousSibling.childElementCount}`
-//   );
-// });
