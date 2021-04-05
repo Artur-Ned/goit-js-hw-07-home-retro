@@ -16,10 +16,20 @@ const images = [
   },
 ];
 
+const getImagesById = document.querySelector('#gallery');
+getImagesById.style.display = 'flex';
+getImagesById.style.justifyContent = 'space-between';
 
 
-
-
+const listItemEl = images.map(images => {
+ const creatliEl = document.createElement('li');
+  creatliEl.style.listStyle = 'none';
+ 
+  const insertLiEl = creatliEl.insertAdjacentHTML('afterbegin', `<img src=${images.url}, alt=${images.alt} width='400px' height='260px'>`);
+  
+  getImagesById.append(creatliEl);
+  
+})
 
 
 
