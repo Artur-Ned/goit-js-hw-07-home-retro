@@ -8,15 +8,17 @@ const ingredients = [
 ];
 // console.log(ingredients);
 
-const contentUlEl = document.querySelector('#ingredients');
+const getUlById = document.querySelector('#ingredients');
 
-ingredients.forEach(element => {
-    const list = document.createElement('li');
-    list.textContent = element;
-    contentUlEl.append(list);
-    
+const createElLi = ingredients.map(ingredient => {
+    const listEl = document.createElement('li');
+    listEl.textContent = ingredient;
+    // getUlById.append(listEl);
+  // console.log(listEl);
+  return listEl;
+  
 });
-
+getUlById.append(...createElLi);
 
 
 

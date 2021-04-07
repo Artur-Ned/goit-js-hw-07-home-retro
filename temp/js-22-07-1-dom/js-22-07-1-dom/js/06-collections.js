@@ -10,7 +10,7 @@ const colorPickerOptions = [
   { label: 'indigo', color: '#3F51B5' },
 ];
 
-const colorPickerContainerEl = document.querySelector('.js-color-picker');
+// const colorPickerContainerEl = document.querySelector('.js-color-picker');
 
 // const elements = colorPickerOptions.map(option => {
 //   const buttonEl = document.createElement('button');
@@ -24,6 +24,8 @@ const colorPickerContainerEl = document.querySelector('.js-color-picker');
 
 // console.log(elements);
 
+
+const colorPickerContainerEl = document.querySelector('.js-color-picker');
 /*
  * Пишем функцию для создания разметки колорпикера
  */

@@ -24,14 +24,13 @@ getImagesById.style.justifyContent = 'space-between';
 const listItemEl = images.map(images => {
  const creatliEl = document.createElement('li');
   creatliEl.style.listStyle = 'none';
- 
-  const insertLiEl = creatliEl.insertAdjacentHTML('afterbegin', `<img src=${images.url}, alt=${images.alt} width='400px' height='260px'>`);
+  creatliEl.insertAdjacentHTML('afterbegin', `<img src=${images.url}, alt=${images.alt} width='400px' height='260px'>`);
   
-  getImagesById.append(creatliEl);
+  return creatliEl;
   
 })
 
-
+getImagesById.append(...listItemEl);
 
 
 
