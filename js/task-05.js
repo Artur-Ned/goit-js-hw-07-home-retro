@@ -1,5 +1,5 @@
 const input = document.querySelector('#name-input');
-console.log(input);
+// console.log(input);
 const span = document.querySelector('#name-output')
 // console.log(span);
 
@@ -15,7 +15,9 @@ function contentInputMassages(masseges) {
     
 }
 
-console.log(span);
+// console.log(span);
+
+
 
 
 // Напиши скрипт который, при наборе текста в инпуте
