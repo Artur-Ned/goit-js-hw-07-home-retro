@@ -6,7 +6,7 @@ const textEl = document.querySelector('#text');
 
 
 
-inputEl.addEventListener('click', onClickInput);
+inputEl.addEventListener('input', onClickInput);
 
 function onClickInput(event) {
    const textSize = event.currentTarget.value

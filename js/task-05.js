@@ -10,7 +10,7 @@ function contentInputMassages(masseges) {
    
     if (masseges.currentTarget.value === '')
         {return span.textContent = 'незнакомец'}
-    return span.textContent = masseges.currentTarget.value;
+     span.textContent = masseges.currentTarget.value;
  
     
 }
